@@ -15,6 +15,10 @@ data "aws_ami" "ubuntu" {
 
 
 provider "aws" {
+  # The lastest version as of today
+  # (according to https://registry.terraform.io/providers/hashicorp/aws/latest)
+  version="3.39.0"
+  profile="terraform-learner"
   region = "us-east-1"
 }
 
